@@ -36,4 +36,8 @@ body {
   .App__orange-blob, .App__yellow-blob {
     width: 30vw;
   }
+
+  .App__container {
+    height: 75vh;
+  }
 }
