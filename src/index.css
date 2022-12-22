@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+:root {
+  --color-bg: #F5F7FB;
+  --color-main: #264653;
+  --color-accent-yellow: #E9C46A;
+  --color-accent-orange: #E76F51;
+  --color-correct-green: #2A9D8F;
+  --color-disabled-gray: #A5A5A5;
+  
+  --font-family: 'Ubuntu Mono', monospace;
+  --main-font-size: 24px;
+  --button-font-size: 20px;
+  --small-button-font-size: 16px;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  --border-radius: 5px;
+}
+
+svg {
+        width: 90vmin;
+        height: 90vmin;
+      }
+
+.shadow-drop-2-center {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}

@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth  ;
+  font-family: var(--font-family);
+}
+
+body {
+  background: var(--color-bg);
+  font-family: var(--font-family);
+  height: 100%;
+}
+
+.App__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.App__orange-blob {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.App__yellow-blob {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .App__orange-blob, .App__yellow-blob {
+    width: 30vw;
+  }
+}
