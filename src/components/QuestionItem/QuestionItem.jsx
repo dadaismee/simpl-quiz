@@ -23,7 +23,7 @@ const QuestionItem = ({ question, answers, qstIdx, markAnswer, isPlaying, allChe
     <div className="questionItem__container">
       <h1 
       // Disabled h1
-      // className='questionItem__question'
+      className='questionItem__question'
       >
       {question}
       </h1>

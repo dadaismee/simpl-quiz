@@ -15,11 +15,24 @@
   .questionScreen__container {
     width: 75vw;
     margin: 15% auto;  
-    padding: 3vh 7vw 5vh 7vw;
+    padding: 3vh;
   }
 
   .questionScreen__text {
     font-size: var(--button-font-size); 
     padding: 19% 12.9%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .questionScreen__container {
+    width: 75vw;
+    margin: 15% auto;  
+    padding: 3vh;
+  }
+
+  .questionScreen__text {
+    font-size: var(--button-font-size); 
+    padding: 19% 10.9%;
   }
 }
