@@ -2,6 +2,7 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import { Logo, Footer } from './components/index'
 import { Start, QuestionScreen } from './containers/index'
+import Confetti from 'react-confetti'
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -119,16 +120,17 @@ function App() {
       return userAns;
     })
     setShowScore(true);
-    console.log(userAnswers)
   }
 
   function resetGame() {
-    setIsPlaying(() => false)
     setShowScore(() => false)
+    fetchQuestions();
+    // setIsPlaying(() => false)
   }
   
   return (
     <div className='App__container'>
+      {score === 3 && <Confetti />}
       <Logo />
       {isPlaying ? 
         <QuestionScreen 
@@ -147,7 +149,7 @@ function App() {
           handleClick={togglePlaying} 
           isPlaying={isPlaying}
         />}
-      <Footer />
+      <Footer />  
     </div>
   )
 }

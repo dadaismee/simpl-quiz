@@ -7,12 +7,15 @@ const Button = (props) => {
   return (
     <button 
       className={styles}
-      onClick={ !props.isPlaying ? 
+      onClick={ 
+        !props.isPlaying ? 
         props.handleClickStart :
-          Boolean(props.userAnswers) ?
-          props.checkAnswers :
-          props.resetGame
-         }
+          Boolean(props.showScore) ?
+            props.resetGame :
+            Boolean(props.allChecked === 3) ?
+              props.checkAnswers :
+              ''
+      }
       >{props.text}
     </button>
   )

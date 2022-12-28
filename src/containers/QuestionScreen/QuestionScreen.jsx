@@ -1,5 +1,5 @@
 import './questionScreen.css'
-import { QuestionItem, Button } from '../../components'
+import { QuestionItem, Button, Score } from '../../components'
 
 const QuestionScreen = ({ questions, markAnswer, checkAnswers, isPlaying, allChecked, correctAnswers, showScore, score, resetGame, userAnswers }) => {
   
@@ -21,18 +21,23 @@ const QuestionScreen = ({ questions, markAnswer, checkAnswers, isPlaying, allChe
   return (
     <section className="questionScreen__container">
       {questionElements}
-      <Button 
-        text={Boolean(userAnswers) ? "Check answers" : "Reset game"}
-        allChecked={allChecked}
-        isPlaying={isPlaying}
-        checkAnswers={checkAnswers}
-        type={allChecked === 3 ? 'default' : 'disabled'}
-        resetGame={resetGame}
-        userAnswers={userAnswers}
-      />
-      {Boolean(showScore) && (
-        <p>Your score is {score}/3</p>
-      )}
+      <div className="questionScreen__button-score-area">
+        {Boolean(showScore) && (
+          <Score 
+            score={score}
+          />
+        )}
+        <Button 
+          text={Boolean(showScore) ? "Replay" : "Check answers"}
+          allChecked={allChecked}
+          isPlaying={isPlaying}
+          checkAnswers={checkAnswers} 
+          type={allChecked === 3 ? 'default' : 'disabled'}
+          resetGame={resetGame}
+          showScore={showScore}
+          userAnswers={userAnswers}
+        />
+      </div>
     </section>
   )
 }

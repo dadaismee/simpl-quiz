@@ -14,9 +14,9 @@
 .start__text {
   font-size: var(--main-font-size);
   padding: 72px 100px 0px;
-  margin-bottom: 48px;
+  margin-bottom: 4%;
   line-height: 24px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .start__text p {
@@ -26,17 +26,17 @@
 .start__accent-green {
   color: var(--color-correct-green);
   font-weight: bold;
-  margin: 0.45vw;
+  margin: 5px;
 }
 .start__accent-orange {
   color: var(--color-accent-orange);
   font-weight: bold;
-  margin: 0.45vw;
+  margin: 5px;
 }
 .start__accent-yellow {
   color: var(--color-accent-yellow);
   font-weight: bold;
-  margin: 0.45vw;
+  margin: 5px;
 }
 
 @media screen and (max-width: 850px) {

@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__creds {
+  color: var(--color-main);
+  position: absolute;
+  text-align: center;
+  bottom: 3%;
+}
+
+a {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--color-main);
+  transition: all 0.25s;
+}
+
+a:hover {
+  font-weight: bold;
+  color: var(--color-correct-green)
+}

@@ -15,14 +15,12 @@ const QuestionItem = ({ question, answers, qstIdx, markAnswer, isPlaying, allChe
       allChecked={allChecked}
       correctAnswer={correctAnswers[qstIdx]}
       showScore={showScore}
-      userAnswers={userAnswers}
       />
   ))
   
   return (
     <div className="questionItem__container">
       <h1 
-      // Disabled h1
       className='questionItem__question'
       >
       {question}

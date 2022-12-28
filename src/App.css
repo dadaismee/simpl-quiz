@@ -9,24 +9,22 @@
 body {
   background: var(--color-bg);
   font-family: var(--font-family);
-  /* background-color: #000; */
 }
 
 .App__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .App__orange-blob {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
 }
 
 .App__yellow-blob {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
 }

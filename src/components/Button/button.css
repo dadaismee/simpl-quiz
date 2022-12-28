@@ -51,6 +51,9 @@
 
 .btn-correct {
   background-color: var(--color-correct-green);
+  font-size: var(--small-button-font-size);
+  margin: 1vh 2.5vh 1vh 0;
+  border: 2px solid var(--color-correct-green);
 }
 
 .btn-wrong {
@@ -75,14 +78,19 @@
 
 @media screen and (max-width: 850px) {
   .btn {
-    /* width: auto; */
-    /* height: auto; */
     font-size: var(--small-button-font-size);
     margin-right: 2vw;
   }
 }
 
 @media screen and (max-width: 550px) {
+  .btn-default {
+    width: auto;
+    height: auto;
+    padding: 2.5vw;
+    /* font-size: 24px; */
+  }
+
   .btn-disabled {
     width: auto;
     height: auto;
@@ -92,5 +100,9 @@
   .btn-quiz {
     margin-right: 1vh;
     font-size: 16px;
+  }
+
+  .btn-correct {
+    margin-right: 1vh;
   }
 }
