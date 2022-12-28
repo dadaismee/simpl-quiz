@@ -1,0 +1,27 @@
+.score__container {
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.score__number {
+  margin: 0 5px;
+}
+
+.score-1 {
+  color: var(--color-accent-orange);
+}
+
+.score-2 {
+  color: var(--color-accent-yellow);
+}
+
+.score-3 {
+  color: var(--color-correct-green);
+}
+
+@media screen and (max-width: 550px) {
+  .score__container {
+    font-size: 16px;
+  }
+}
