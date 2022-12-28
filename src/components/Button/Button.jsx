@@ -14,7 +14,7 @@ const Button = (props) => {
             props.resetGame :
             Boolean(props.allChecked === 3) ?
               props.checkAnswers :
-              ''
+              undefined
       }
       >{props.text}
     </button>
