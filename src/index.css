@@ -43,6 +43,7 @@ svg {
             box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   }
 }
+
 @keyframes shadow-drop-2-center {
   0% {
     -webkit-transform: translateZ(0);

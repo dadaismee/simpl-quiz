@@ -9,15 +9,14 @@
 body {
   background: var(--color-bg);
   font-family: var(--font-family);
-  height: 100%;
+  /* background-color: #000; */
 }
 
 .App__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 75vh;
+  /* align-items: center; */
 }
 
 .App__orange-blob {
@@ -35,9 +34,5 @@ body {
 @media screen and (max-width: 850px) {
   .App__orange-blob, .App__yellow-blob {
     width: 30vw;
-  }
-
-  .App__container {
-    height: 65vh;
   }
 }

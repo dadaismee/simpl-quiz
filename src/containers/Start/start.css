@@ -3,13 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   width: 780px;
-  height: auto;
   border: 2px solid var(--color-main);
   border-radius: var(--border-radius);
-  prefix: 0;
   padding-bottom: 67px;
-  box-sizing: border-box;
+  margin: 94px 330px 0px;
 }
 
 .start__text {
@@ -43,6 +42,7 @@
 @media screen and (max-width: 850px) {
   .start__container {
     width: 75vw;
+    margin: 15% auto;  
   }
 
   .start__text {

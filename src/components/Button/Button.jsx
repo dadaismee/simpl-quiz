@@ -1,10 +1,19 @@
 import './button.css'
 
 const Button = (props) => {
+  
+  const styles = `btn btn-${props.type || 'default'}`;
+  
   return (
     <button 
-      type='button'
-      className='button shadow-drop-2-center'>{props.text}
+      className={styles}
+      onClick={ !props.isPlaying ? 
+        props.handleClickStart :
+          Boolean(props.userAnswers) ?
+          props.checkAnswers :
+          props.resetGame
+         }
+      >{props.text}
     </button>
   )
 }

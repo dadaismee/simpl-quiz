@@ -1,7 +1,7 @@
 import './start.css'
 import { Button } from '../../components'
 
-const Start = () => {
+const Start = (props) => {
   return (
     <section className="start__container">
       <div className="start__text">
@@ -20,6 +20,8 @@ const Start = () => {
       </div>
       <Button 
         text="Start quiz"
+        isPlaying={props.isPlaying}
+        handleClickStart={props.handleClick}
       />
     </section>
   )

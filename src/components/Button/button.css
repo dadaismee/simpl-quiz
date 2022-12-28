@@ -1,26 +1,83 @@
-.button {
-  width: 180px;
-  height: 52px;
-  border-radius: var(--border-radius);
-  background-color: var(--color-main);
-  border: none;
-  color: var(--color-accent-yellow);
+.btn {
   font-family: var(--font-family);
   font-weight: bold;
   font-size: var(--button-font-size);
+  color: var(--color-accent-yellow);
+  border: none;
+  border-radius: var(--border-radius);
+  
   cursor: pointer;
-  transition: all 0.1s;
+  transition: all 0.15s;
+  padding: 0.65vw 1vw;
 }
 
-.button:active {
+/* Button states */
+.btn-default {
+  width: 180px;
+  height: 52px;
+  background-color: var(--color-main);
+  color: var(--color-accent-yellow);
+}
+
+.btn-quiz {
+  border: 2px solid var(--color-main);
+  font-size: var(--small-button-font-size);
+  background-color: transparent;
+  color: var(--color-main);
+  margin: 1vh 2.5vh 1vh 0;
+}
+
+.btn-quiz-selected {
+  border: 2px solid var(--color-main);
+  font-size: var(--small-button-font-size);
+  background-color: var(--color-main);
+  color: var(--color-accent-yellow);
+  margin: 1vh 2.5vh 1vh 0;
+}
+
+.btn-disabled {
+  width: 180px;
+  height: 52px;
+  background-color: var(--color-disabled-gray);
+  color: #fff;
+}
+
+.btn-quiz-disabled {
+  border: 2px solid var(--color-disabled-gray);
+  font-size: var(--small-button-font-size);
+  background-color: transparent;
+  color: var(--color-disabled-gray);
+}
+
+.btn-correct {
+  background-color: var(--color-correct-green);
+}
+
+.btn-wrong {
+  background-color: var(--color-accent-orange);
+  color: var(--color-main);
+}
+/* Button states modifiers */
+.btn:hover {
+  opacity: 0.75;   
+}
+
+.btn-disabled:hover, 
+.btn-quiz-disabled:hover {
+  cursor: not-allowed;
+}
+
+.btn-default:active, 
+.btn-quiz:active {
   background-color: var(--color-accent-yellow);
   color: var(--color-main)
 }
 
 @media screen and (max-width: 850px) {
-  .button {
-    width: 50%;
-    height: 52px;
+  .btn {
+    /* width: auto; */
+    /* height: auto; */
     font-size: var(--small-button-font-size);
+    margin-right: 2vw;
   }
 }

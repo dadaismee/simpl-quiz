@@ -1,0 +1,25 @@
+.questionScreen__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  border: 2px solid var(--color-main);
+  border-radius: var(--border-radius);
+  padding: 48px 50px 3.5vh 50px;
+  margin: 30px 330px 0px;
+  transition: all 0.15s;
+}
+
+@media screen and (max-width: 850px) {
+  .questionScreen__container {
+    width: 75vw;
+    margin: 15% auto;  
+    padding: 3vh 7vw 5vh 7vw;
+  }
+
+  .questionScreen__text {
+    font-size: var(--button-font-size); 
+    padding: 19% 12.9%;
+  }
+}
