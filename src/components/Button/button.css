@@ -81,3 +81,16 @@
     margin-right: 2vw;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .btn-disabled {
+    width: auto;
+    height: auto;
+    padding: 2.5vw;
+  } 
+
+  .btn-quiz {
+    margin-right: 1vh;
+    font-size: 16px;
+  }
+}
