@@ -38,4 +38,12 @@ body {
   .App__blob {
     width: 30vw;
   }
+
+  .yellow {
+    bottom: -65px;
+  }
+
+  .orange {
+    top: -75px;
+  }
 }
