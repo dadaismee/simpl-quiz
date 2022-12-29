@@ -73,6 +73,11 @@ function App() {
     setIsPlaying(() => true);
   }
 
+  function notPlaying() {
+    setIsPlaying(() => false);
+    resetGame();
+  }
+
   function markAnswer(e, qstIdx, answIdx) {
     e.preventDefault();
 
@@ -131,7 +136,9 @@ function App() {
   return (
     <div className='App__container'>
       {score === 3 && <Confetti />}
-      <Logo />
+      <Logo 
+        handleClick={notPlaying}
+      />
       {isPlaying ? 
         <QuestionScreen 
           questions={questions}
