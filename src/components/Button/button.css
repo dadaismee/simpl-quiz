@@ -78,7 +78,6 @@
 
 @media screen and (max-width: 850px) {
   .btn {
-    font-size: var(--small-button-font-size);
     margin-right: 2vw;
   }
 }
@@ -88,7 +87,7 @@
     width: auto;
     height: auto;
     padding: 2.5vw;
-    /* font-size: 24px; */
+    font-size: var(--small-button-font-size);
   }
 
   .btn-disabled {

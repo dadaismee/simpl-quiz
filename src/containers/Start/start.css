@@ -4,11 +4,11 @@
   justify-content: center;
   align-items: center;
   
-  width: 780px;
+  width: 54%;
   border: 2px solid var(--color-main);
   border-radius: var(--border-radius);
   padding-bottom: 67px;
-  margin: 94px 330px 0px;
+  margin: 8% 23% 0px;
 }
 
 .start__text {
@@ -44,9 +44,12 @@
     width: 75vw;
     margin: 15% auto;  
   }
+}
 
+@media screen and (max-width: 550px) {
   .start__text {
     font-size: var(--button-font-size); 
-    padding: 19% 12.9%;
+    padding: 12.9%;
   }
 }
+

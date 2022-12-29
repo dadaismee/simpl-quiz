@@ -1,10 +1,11 @@
 import yellowBlob from '../../assets/yellow-blob.svg'
+import YellowBlob from '../Blobs/YellowBlob/YellowBlob'
 import './footer.css'
 
 const Footer = () => {
   return (
     <footer>
-      <img className='App__yellow-blob' src={yellowBlob}/>
+      <YellowBlob />
       <p className='footer__creds'>
         <a href="https://vshevchenko.netlify.app/" target="_blank">
           Valerii Shevchenko © 2022

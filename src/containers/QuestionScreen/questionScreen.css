@@ -7,7 +7,7 @@
   border: 2px solid var(--color-main);
   border-radius: var(--border-radius);
   padding: 48px 50px 3.5vh 50px;
-  margin : 30px 330px 0px;
+  margin : 2.7% 23%;
   transition: all 0.15s;
 }
 
@@ -19,14 +19,6 @@
 }
 
 @media screen and (max-width: 850px) {
-  .questionScreen__container {
-    width: 75vw;
-    margin: 15% auto;  
-    padding: 3vh;
-  }
-}
-
-@media screen and (max-width: 550px) {
   .questionScreen__container {
     width: 75vw;
     margin: 15% auto;  
