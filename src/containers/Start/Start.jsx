@@ -3,7 +3,7 @@ import { Button } from '../../components'
 
 const Start = (props) => {
   return (
-    <section className="start__container">
+    <main className="start__container">
       <div className="start__text">
         <p>
           <strong>Hi!</strong>
@@ -23,7 +23,7 @@ const Start = (props) => {
         isPlaying={props.isPlaying}
         handleClickStart={props.handleClick}
       />
-    </section>
+    </main>
   )
 }
 

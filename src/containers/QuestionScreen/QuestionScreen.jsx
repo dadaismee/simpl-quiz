@@ -19,7 +19,7 @@ const QuestionScreen = ({ questions, markAnswer, checkAnswers, isPlaying, allChe
   ))
 
   return (
-    <section className="questionScreen__container">
+    <main className="questionScreen__container">
       {questionElements}
       <div className="questionScreen__button-score-area">
         {Boolean(showScore) && (
@@ -38,7 +38,7 @@ const QuestionScreen = ({ questions, markAnswer, checkAnswers, isPlaying, allChe
           userAnswers={userAnswers}
         />
       </div>
-    </section>
+    </main>
   )
 }
 

@@ -4,6 +4,7 @@ import { Logo, Footer } from './components/index'
 import { Start, QuestionScreen } from './containers/index'
 import Confetti from 'react-confetti'
 
+
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [allAnswersChecked, setAllAnswersChecked] = useState(0);
@@ -12,6 +13,7 @@ function App() {
   const [userAnswers, setUserAnswers] = useState([]);
   const [correctAnswers, setCorrectAnswers] = useState([]);
   const [questions, setQuestions] = useState([]);
+  const MAX_QUESTIONS = 3;
   
   useEffect(() => {
     fetchQuestions();
@@ -130,26 +132,25 @@ function App() {
   function resetGame() {
     setShowScore(() => false)
     fetchQuestions();
-    // setIsPlaying(() => false)
   }
   
   return (
     <div className='App__container'>
-      {score === 3 && <Confetti />}
+      {score === MAX_QUESTIONS && <Confetti />}
       <Logo 
         handleClick={notPlaying}
       />
       {isPlaying ? 
         <QuestionScreen 
           questions={questions}
-          markAnswer={markAnswer}
-          checkAnswers={checkAnswers}
           allChecked={allAnswersChecked}
           isPlaying={isPlaying}
           correctAnswers={correctAnswers}
           showScore={showScore}
           score={score}
           resetGame={resetGame}
+          markAnswer={markAnswer}
+          checkAnswers={checkAnswers}
           userAnswers={userAnswers}
         /> : 
         <Start 

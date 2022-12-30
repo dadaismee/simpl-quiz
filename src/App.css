@@ -2,20 +2,27 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth  ;
+  scroll-behavior: smooth;
   font-family: var(--font-family);
 }
 
 body {
+  display: flex; 
+  flex-direction: column;
   background: var(--color-bg);
-  font-family: var(--font-family);
-  height: 100%;
+}
+
+html {
+  height: fill-available;
+  height: -webkit-fill-available;
 }
 
 .App__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* background-color: #000; */
+  height: 100vh;
+  height: fill-available;
 }
 
 .App__blob {
@@ -35,7 +42,7 @@ body {
   scale: -1 1;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) { 
   .App__blob {
     width: 30vw;
   }
