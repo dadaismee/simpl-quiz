@@ -9,6 +9,7 @@
   padding: 48px 50px 3.5vh 50px;
   margin : 2.7% 23%;
   transition: all 0.15s;
+  animation: ScreenAnimation 0.5s;
 }
 
 .questionScreen__button-score-area {

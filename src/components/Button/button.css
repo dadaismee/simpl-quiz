@@ -87,10 +87,16 @@
     font-size: var(--small-button-font-size);
   }
 
+  .btn-default {
+    width: auto;
+    padding: 2.5vw;
+  }
+  
   .btn-disabled {
     width: auto;
     height: auto;
     padding: 2.5vw;
+
   } 
 
   .btn-quiz {
