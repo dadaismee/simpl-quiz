@@ -7,14 +7,14 @@
   width: 54%;
   border: 2px solid var(--color-main);
   border-radius: var(--border-radius);
-  padding-bottom: 67px;
+  padding: 4%;
   margin: 8% 23% 0px;
   animation: ScreenAnimation 1s;
 }
 
 .start__text {
   font-size: var(--main-font-size);
-  padding: 72px 100px 0px;
+  /* padding: 72px 100px 0px; */
   margin-bottom: 4%;
   line-height: 24px;
   /* width: 100%; */
@@ -43,8 +43,8 @@
 @media screen and (max-width: 850px) {
   .start__container {
     width: 75vw;
-    /* margin: 15% auto;   */
-    margin: auto;
+    margin: 20% auto auto;  
+    /* margin: auto; */
   }
 }
 

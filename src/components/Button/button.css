@@ -24,7 +24,7 @@
   font-size: var(--small-button-font-size);
   background-color: transparent;
   color: var(--color-main);
-  margin: 1vh 2.5vh 1vh 0;
+  margin: 1vh 1.5vh 1vh 0;
 }
 
 .btn-quiz-selected {
@@ -32,7 +32,7 @@
   font-size: var(--small-button-font-size);
   background-color: var(--color-main);
   color: var(--color-accent-yellow);
-  margin: 1vh 2.5vh 1vh 0;
+  margin: 1vh 1.5vh 1vh 0;
 }
 
 .btn-disabled {
@@ -52,7 +52,7 @@
 .btn-correct {
   background-color: var(--color-correct-green);
   font-size: var(--small-button-font-size);
-  margin: 1vh 2.5vh 1vh 0;
+  margin: 1vh 1.5vh 1vh 0;
   border: 2px solid var(--color-correct-green);
 }
 

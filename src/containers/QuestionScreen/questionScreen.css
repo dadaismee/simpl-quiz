@@ -5,10 +5,12 @@
   align-items: center;
   
   max-height: min-content;
+  max-width: 80%;
+  width: auto;
 
   border: 2px solid var(--color-main);
   border-radius: var(--border-radius);
-  padding: 48px 50px 3.5vh 50px;
+  padding: 4vh;
   margin : 2.7% 23%;
   transition: all 0.15s;
   opacity: 0;
@@ -26,8 +28,7 @@
 @media screen and (max-width: 850px) {
   .questionScreen__container {
     width: 85vw;
-    /* margin: 15% auto auto;   */
-    margin: auto;
+    margin: 20% auto auto;  
     padding: 3vh;
   }
 }
