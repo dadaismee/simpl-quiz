@@ -7,7 +7,7 @@ const Button = (props) => {
     props.handleClickStart :
       Boolean(props.showScore) ?
         props.resetGame :
-        Boolean(props.allChecked === 3) ?
+        Boolean(props.allChecked === props.maxQuestions) ?
           props.checkAnswers :
           (e) => e.preventDefault();
 
