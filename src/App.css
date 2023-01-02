@@ -10,8 +10,6 @@ body {
   background: var(--color-bg);
   display: flex; 
   flex-direction: column;
-  height: 100vh;
-  height: var(--doc-height);
 }
 
 .App__container {
@@ -19,7 +17,7 @@ body {
   flex-direction: column;
   /* background-color: #000; */
   height: 100vh;
-  height: fill-available;
+  height: var(--doc-height);
 }
 
 .App__blob {
