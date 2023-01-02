@@ -7,14 +7,11 @@
 }
 
 body {
+  background: var(--color-bg);
   display: flex; 
   flex-direction: column;
-  background: var(--color-bg);
-}
-
-html {
-  height: fill-available;
-  height: -webkit-fill-available;
+  height: 100vh;
+  height: var(--doc-height);
 }
 
 .App__container {
@@ -29,6 +26,7 @@ html {
   width: 30vw;
   position: fixed;
   pointer-events: none;
+  z-index: -1;
 }
 
 .yellow {

@@ -4,7 +4,6 @@ import { Logo, Footer } from './components/index'
 import { Start, QuestionScreen } from './containers/index'
 import Confetti from 'react-confetti'
 
-
 function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [allAnswersChecked, setAllAnswersChecked] = useState(0);

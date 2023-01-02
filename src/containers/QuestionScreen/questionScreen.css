@@ -4,12 +4,16 @@
   justify-content: center;
   align-items: center;
   
+  max-height: min-content;
+
   border: 2px solid var(--color-main);
   border-radius: var(--border-radius);
   padding: 48px 50px 3.5vh 50px;
   margin : 2.7% 23%;
   transition: all 0.15s;
+  opacity: 0;
   animation: ScreenAnimation 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .questionScreen__button-score-area {
@@ -21,8 +25,8 @@
 
 @media screen and (max-width: 850px) {
   .questionScreen__container {
-    width: 75vw;
-    margin: 15% auto;  
+    width: 85vw;
+    margin: 15% auto auto;  
     padding: 3vh;
   }
 }
