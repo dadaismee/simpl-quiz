@@ -2,10 +2,7 @@ import './score.css'
 
 const Score = ({ score }) => {
   
-  const styles = 
-    score === 3 ? 'score-3' :
-    score === 2 ? 'score-2' :
-    'score-1';
+  const styles = `score-${score || 1}`;
   
   return (
     <div className="score__container">

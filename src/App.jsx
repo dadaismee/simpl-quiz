@@ -151,6 +151,7 @@ function App() {
           markAnswer={markAnswer}
           checkAnswers={checkAnswers}
           userAnswers={userAnswers}
+          maxQuestions={MAX_QUESTIONS}
         /> : 
         <Start 
           handleClick={togglePlaying} 

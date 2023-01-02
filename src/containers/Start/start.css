@@ -43,7 +43,8 @@
 @media screen and (max-width: 850px) {
   .start__container {
     width: 75vw;
-    margin: 15% auto;  
+    /* margin: 15% auto;   */
+    margin: auto;
   }
 }
 

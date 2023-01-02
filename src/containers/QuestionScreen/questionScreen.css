@@ -26,7 +26,8 @@
 @media screen and (max-width: 850px) {
   .questionScreen__container {
     width: 85vw;
-    margin: 15% auto auto;  
+    /* margin: 15% auto auto;   */
+    margin: auto;
     padding: 3vh;
   }
 }
