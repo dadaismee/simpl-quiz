@@ -9,7 +9,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
-
 const documentHeight = () => {
   const doc = document.getElementById('root');
   doc.style.setProperty('--doc-height', `${window.innerHeight}px`);

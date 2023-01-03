@@ -10,14 +10,13 @@ body {
   background: var(--color-bg);
   display: flex; 
   flex-direction: column;
+  /* height: 100vh; */
+  height: var(--doc-height);
 }
 
 .App__container {
   display: flex;
   flex-direction: column;
-  /* background-color: #000; */
-  height: 100vh;
-  height: var(--doc-height);
 }
 
 .App__blob {
