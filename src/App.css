@@ -6,15 +6,11 @@
   font-family: var(--font-family);
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
 body {
   background: var(--color-bg);
   display: flex; 
   flex-direction: column;
-  height: -webkit-fill-available;
+  height: 100dvh;
 }
 
 .App__container {
@@ -23,7 +19,7 @@ body {
 }
 
 .App__blob {
-  width: 30vw;
+  width: 30vw;  
   position: fixed;
   pointer-events: none;
   z-index: -1;
