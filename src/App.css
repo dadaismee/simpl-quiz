@@ -14,7 +14,7 @@ body {
   background: var(--color-bg);
   display: flex; 
   flex-direction: column;
-  min-height: 100vh;
+  height: -webkit-fill-available;
 }
 
 .App__container {
@@ -51,11 +51,7 @@ body {
   }
 }
 
-@media screen and (max-width: 850px) { 
-  body {
-    min-height: -webkit-fill-available;
-  }
-  
+@media screen and (max-width: 850px) {   
   .App__blob {
     width: 30vw;
   }
