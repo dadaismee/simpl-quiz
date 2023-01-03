@@ -6,12 +6,15 @@
   font-family: var(--font-family);
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   background: var(--color-bg);
   display: flex; 
   flex-direction: column;
-  /* height: 100vh; */
-  height: var(--doc-height);
+  min-height: 100vh;
 }
 
 .App__container {
@@ -49,6 +52,10 @@ body {
 }
 
 @media screen and (max-width: 850px) { 
+  body {
+    min-height: -webkit-fill-available;
+  }
+  
   .App__blob {
     width: 30vw;
   }
