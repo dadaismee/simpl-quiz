@@ -29,7 +29,7 @@
 @media screen and (max-width: 850px) {
   .questionScreen__container {
     width: 85vw;
-    margin: 20% auto;  
+    margin: 15% auto;  
     padding: 3vh;
   }
 }
